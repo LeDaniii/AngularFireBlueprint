@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "myauth-13fad": {
+      "hosting": {
+        "angular-firebase-todo": [
+          "myauth-13fad"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "myauth-13fad"
+  }
+}

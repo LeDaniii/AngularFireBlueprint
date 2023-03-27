@@ -1,0 +1,37 @@
+<div class="wrapper">
+  <div class="header">
+    <h4>Registration</h4>
+  </div>
+
+  <div class="main">
+    <form action="" (ngSubmit)="submit()">
+      <!-- ---------- email ---------- -->
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Email Adress" class="login-input"
+        [(ngModel)]="form.email">
+      <!-- ---------- password ---------- -->
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" placeholder="Password" class="login-input"
+        [(ngModel)]="form.password">
+      <!-- ---------- confirm password ---------- -->
+      <label for="confirmPassword">Confirm Password</label>
+      <input type="password" id="confirm-password" name="comfirnPassword" placeholder="Confirm Password"
+        class="login-input" [(ngModel)]="form.confirmPassword">
+      <!-- ---------- submit button ---------- -->
+      <button type="submit">Register Now</button>
+    </form>
+    <div class="oAuthWrapper">
+      <!-- ---------- OAuth Google ---------- -->
+      <div class="oAuthButton">
+        <i class="fa-brands fa-google"></i> Google
+      </div>
+      <!-- ---------- OAuth Microsoft ---------- -->
+      <div class="oAuthButton">
+        <i class="fa-brands fa-windows"></i> Microsoft
+      </div>
+    </div>
+    <div class="massege-wrapper">
+      <!-- <app-error-success-message [message]="message" [backgroundcolor]="messageBackground"></app-error-success-message> -->
+    </div>
+  </div>
+</div>

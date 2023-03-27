@@ -97,6 +97,16 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "angular-firebase-todo:build:production",
+            "firebaseProject": "myauth-13fad",
+            "firebaseHostingSite": "myauth-13fad"
+          }
         }
       }
     }
