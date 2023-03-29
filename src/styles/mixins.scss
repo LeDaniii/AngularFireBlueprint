@@ -1,0 +1,40 @@
+// ------ FlexBox -----
+// ----------------------------
+// FlexLayout
+// @include flex(space-between, flex-start, column);
+// ----------------------------
+@mixin flex($justify, $align, $direction) {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
+}
+
+//Scrollbar
+@mixin custom-scrollbar($width: 2px, $background: #ddd, $thumb-background: #bbb) {
+  body {
+    scrollbar-width: $width;
+    scrollbar-color: $background;
+  }
+
+  ::-webkit-scrollbar {
+    width: $width;
+    background-color: $background;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: $thumb-background;
+    border-radius: 10px;
+  }
+
+  ::-moz-scrollbar {
+    width: $width;
+    background-color: $background;
+  }
+
+  ::-moz-scrollbar-thumb {
+    background-color: $thumb-background;
+    border-radius: 10px;
+  }
+}

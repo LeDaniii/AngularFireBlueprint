@@ -1,1 +1,33 @@
-<p>login works!</p>
+<div class="wrapper">
+  <div class="header">
+    <h4>Login</h4>
+  </div>
+
+  <div class="main">
+    <form action="" (ngSubmit)="submit()">
+      <!-- ---------- email ---------- -->
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Email Adress" class="login-input"
+        [(ngModel)]="form.email">
+      <!-- ---------- password ---------- -->
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" placeholder="Password" class="login-input"
+        [(ngModel)]="form.password">
+      <!-- ---------- Submit Button ---------- -->
+      <button type="submit">Login</button>
+    </form>
+    <div class="oAuthWrapper">
+      <!-- ---------- OAuth Google ---------- -->
+      <div class="oAuthButton">
+        <i class="fa-brands fa-google"></i><span>Google</span>
+      </div>
+      <!-- ---------- OAuth Microsoft ---------- -->
+      <div class="oAuthButton">
+        <i class="fa-brands fa-windows"></i><span>Microsoft</span>
+      </div>
+    </div>
+    <div class="massege-wrapper">
+      <!-- <app-error-success-message [message]="message" [backgroundcolor]="messageBackground"></app-error-success-message> -->
+    </div>
+  </div>
+</div>
